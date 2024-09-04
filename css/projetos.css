@@ -1,0 +1,113 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Estilo do header */
+header {
+    background: #555555;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    width: 190px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f0dc28;
+}
+
+/* Estilo da seção de projetos */
+.projetos {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.projetos .container {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portifolio-item {
+    flex: 1 1 calc(33.333% - 40px);
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portifolio-item img {
+    width: 99%;
+    height: auto;
+}
+
+.portifolio-item h2 {
+    padding: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.portifolio-item p {
+    padding: 0 20px 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Efeito de hover para os itens do portfólio */
+.portifolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* Estilo do footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: underline;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
